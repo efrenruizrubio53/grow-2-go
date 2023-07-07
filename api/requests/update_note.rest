@@ -1,0 +1,7 @@
+PUT http://localhost:3001/api/notes/64a7a1c2a6e7c40d9c081eb7
+Content-Type: application/json
+
+{
+  "content": "No confíes en nadie, ni siquiera en ti mismo",
+  "important": false
+}
