@@ -1,0 +1,35 @@
+{
+  "name": "grow2go",
+  "version": "1.0.0",
+  "description": "",
+  "workspaces": [
+    "api",
+    "client"
+  ],
+  "main": "index.js",
+  "scripts": {
+    "back:dev": "cd api && npm start",
+    "front:dev": "cd client && npm run dev",
+    "dev": "npm-run-all --parallel back:dev front:dev",
+    "lint": "cd api && npm run lint",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "axios": "^1.4.0",
+    "cors": "2.8.5",
+    "dotenv": "16.3.1",
+    "express": "4.18.2",
+    "mongoose": "7.3.2"
+  },
+  "devDependencies": {
+    "eslint": "^8.44.0",
+    "eslint-config-standard": "^17.1.0",
+    "eslint-plugin-import": "^2.27.5",
+    "eslint-plugin-n": "^16.0.1",
+    "eslint-plugin-promise": "^6.1.1",
+    "npm-run-all": "4.1.5"
+  }
+}
